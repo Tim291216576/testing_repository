@@ -1,0 +1,54 @@
+<?php
+$lang->menu->feedback = 'Feedback|feedback|admin|';
+$lang->menuOrder[24]  = 'feedback';
+$lang->searchLang     = 'Search';
+
+$lang->feedback = new stdclass();
+$lang->feedback->menu = new stdclass();
+$lang->feedback->menu->unclosed   = array('link' => 'Unclosed|feedback|admin|browseType=unclosed');
+$lang->feedback->menu->all        = array('link' => 'All|feedback|admin|browseType=all');
+$lang->feedback->menu->public     = array('link' => 'Public|feedback|admin|browseType=public');
+$lang->feedback->menu->tostory    = array('link' => 'To Story|feedback|admin|browseType=tostory');
+$lang->feedback->menu->totask     = array('link' => 'To Task|feedback|admin|browseType=totask');
+$lang->feedback->menu->tobug      = array('link' => 'To Bug|feedback|admin|browseType=tobug');
+$lang->feedback->menu->totodo     = array('link' => 'To Todo|feedback|admin|browseType=totodo');
+$lang->feedback->menu->review     = array('link' => 'Review|feedback|admin|browseType=review');
+$lang->feedback->menu->assigntome = array('link' => 'AssignedToMe|feedback|admin|browseType=assigntome');
+$lang->feedback->menu->bysearch   = array('link' => '<a href="javascript:;" class="querybox-toggle"><i class="icon-search icon"></i> ' . $lang->searchLang . '</a>');
+$lang->feedback->menu->faq        = array('link' => 'FAQ|faq|browse|');
+$lang->feedback->menu->products   = array('link' => 'Privilege|feedback|products', 'alias' => 'manageproduct');
+
+$lang->feedback->menuOrder[5]  = 'unclosed';
+$lang->feedback->menuOrder[10] = 'all';
+$lang->feedback->menuOrder[15] = 'public';
+$lang->feedback->menuOrder[20] = 'tostory';
+$lang->feedback->menuOrder[25] = 'totask';
+$lang->feedback->menuOrder[30] = 'tobug';
+$lang->feedback->menuOrder[35] = 'totodo';
+$lang->feedback->menuOrder[40] = 'review';
+$lang->feedback->menuOrder[45] = 'assigntome';
+$lang->feedback->menuOrder[50] = 'bysearch';
+$lang->feedback->menuOrder[55] = 'faq';
+$lang->feedback->menuOrder[60] = 'products';
+
+$lang->faq = new stdclass();
+$lang->faq->menu      = $lang->feedback->menu;
+$lang->faq->menuOrder = $lang->feedback->menuOrder;
+$lang->menugroup->faq = 'feedback';
+
+$lang->feedbackView[0] = 'Developer Interface';
+$lang->feedbackView[1] = 'Feedback Interface';
+
+global $app;
+if(!empty($_SESSION['user']->feedback) or !empty($_COOKIE['feedbackView']) and $app and $app->viewType == 'mhtml')
+{
+    $lang->feedback->menu = new stdclass();
+    $lang->feedback->menu->unclosed = array('link' => 'Unclosed|feedback|browse|browseType=unclosed');
+    $lang->feedback->menu->all      = array('link' => 'All|feedback|browse|browseType=all');
+    $lang->feedback->menu->public   = array('link' => 'Public|feedback|browse|browseType=public');
+
+    $lang->feedback->menuOrder = array();
+    $lang->feedback->menuOrder[5]  = 'unclosed';
+    $lang->feedback->menuOrder[10] = 'all';
+    $lang->feedback->menuOrder[15] = 'public';
+}

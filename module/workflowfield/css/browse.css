@@ -1,0 +1,9 @@
+.panel-body{overflow-y: scroll;}
+
+.tr-child, .tr-child > td {padding: 0 !important;}
+.tr-child > td > table {padding: 5px; background-color: #fff; border: 2px solid #DDDDDD;}
+
+.table tbody .icon-move {cursor: pointer;}
+
+.buildin0, .exportStatus0, .searchStatus0 {color: red;}
+.buildin1, .exportStatus1, .searchStatus1 {color: green;}

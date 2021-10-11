@@ -1,0 +1,3 @@
+.nowrap {white-space: nowrap;}
+.main-table table tbody td:last-child {overflow: visible;}
+.table-actions > .btn-group {margin-top: 0px;}

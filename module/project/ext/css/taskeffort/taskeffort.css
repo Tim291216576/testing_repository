@@ -1,0 +1,10 @@
+.group-menu > .dropdown > .dropdown-menu{right: 0; width: 100%;}
+.main-table tbody>tr>td{position: static}
+.table>tbody>tr>td.c-side { background: #fff !important; }
+.group-toggle{padding-left:0px !important;}
+.head-fixed .fixed-left .datatable-row-left .group-menu a{color:#000 !important;}
+td.group-content{background: #fff}
+.datatable-row .dropdown{background: #f5f5f5}
+.load-indicator:before  {background: #fff}
+.load-indicator:after{top:200px}
+.datatable .table>tbody>tr>td{padding-left: 15px}

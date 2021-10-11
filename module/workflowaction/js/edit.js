@@ -1,0 +1,4 @@
+$(function()
+{
+    $('#actionTable #type').change();
+})

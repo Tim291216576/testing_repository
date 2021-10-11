@@ -1,0 +1,42 @@
+<?php
+$config->bizVersion = array();
+$config->bizVersion['biz1_0']      = '9_5_1';
+$config->bizVersion['biz1_1']      = '9_6_3';
+$config->bizVersion['biz1_1_1']    = '9_8';
+$config->bizVersion['biz1_1_2']    = '9_8_1';
+$config->bizVersion['biz1_1_3']    = '9_8_2';
+$config->bizVersion['biz1_1_4']    = '9_8_3';
+$config->bizVersion['biz2_0_beta'] = '10_0';
+$config->bizVersion['biz2_1']      = '10_3';
+$config->bizVersion['biz2_2']      = '10_4';
+$config->bizVersion['biz2_3']      = '10_5';
+$config->bizVersion['biz2_3_1']    = '10_6';
+$config->bizVersion['biz2_4']      = '10_6';
+$config->bizVersion['biz3_0']      = '11_1';
+$config->bizVersion['biz3_1']      = '11_2';
+$config->bizVersion['biz3_2']      = '11_3';
+$config->bizVersion['biz3_2_1']    = '11_4_1';
+$config->bizVersion['biz3_3']      = '11_5';
+$config->bizVersion['biz3_4']      = '11_6';
+$config->bizVersion['biz3_5_alpha']= '11_6';
+$config->bizVersion['biz3_5_beta'] = '11_6_1';
+$config->bizVersion['biz3_5']      = '11_6_5';
+$config->bizVersion['biz3_5_1']    = '11_7';
+$config->bizVersion['biz3_6']      = '12_0';
+$config->bizVersion['biz3_6_1']    = '12_0_1';
+$config->bizVersion['biz3_7']      = '12_2';
+$config->bizVersion['biz3_7_1']    = '12_3_2';
+$config->bizVersion['biz3_7_2']    = '12_3_3';
+$config->bizVersion['biz4_0']      = '12_4';
+$config->bizVersion['biz4_0_1']    = '12_4_1';
+
+$config->excludeFiles['module/task/ext/control/create.php']    = 1;
+$config->excludeFiles['module/project/ext/control/kanban.php'] = 1;
+$config->excludeFiles['module/task/ext/control/activate.php']  = 1;
+$config->excludeFiles['module/task/ext/control/cancel.php']    = 1;
+$config->excludeFiles['module/task/ext/control/close.php']     = 1;
+$config->excludeFiles['module/task/ext/control/finish.php']    = 1;
+$config->excludeFiles['module/task/ext/control/start.php']     = 1;
+
+$config->delete['3.5.alpha'][] = 'module/common/ext/model/flow.php';
+$config->delete['3.7'][] = 'module/workflowlayout/ext/control/admin.php';
